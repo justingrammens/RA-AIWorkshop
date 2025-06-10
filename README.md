@@ -4,7 +4,9 @@ LangChain can be used to build a wide variety of AI applications, including chat
 
 This repository will cover both an overview of the LangChain ecosystem with examples using various components, but additionally, examples using Retrieval Augmented Generation (RAG) and agents as well.. oh my!
 
-Finally, we'll show how you can easily bring your AI applications to life thrpough a web browser and Python using Streamlit.
+Finally, we'll show how you can easily bring your AI applications to life through a web browser and Python using Streamlit.
+
+If you would like to run a basic exmaple, test running a Python Notebook in Google Collab for [LangChain Medical Device](https://colab.research.google.com/drive/1xNyQPdNaPW5UEw0I16H1ciGaDpXMFgql?usp=sharing).
 
 ## ABOUT ME
 
