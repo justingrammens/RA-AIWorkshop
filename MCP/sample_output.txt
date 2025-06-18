@@ -1,0 +1,39 @@
+{'messages': [HumanMessage(content="what's (3 + 5) x 12?", additional_kwargs={}, response_metadata={}, id='33de83aa-96c7-4e85-ae89-82bd1fbb8dc7'), AIMessage(content='', additional_kwargs={'tool_calls': [
+                {'id': 'call_rnPvcHcifXPtfN3bV9LyFObF', 'function': {'arguments': '{
+                            "a": 3,
+                            "b": 5
+                        }', 'name': 'add'
+                    }, 'type': 'function'
+                },
+                {'id': 'call_N6m2zMV6sszfLKFObRC1Vl1N', 'function': {'arguments': '{
+                            "a": 8,
+                            "b": 12
+                        }', 'name': 'multiply'
+                    }, 'type': 'function'
+                }
+            ], 'refusal': None
+        }, response_metadata={'token_usage': {'completion_tokens': 50, 'prompt_tokens': 77, 'total_tokens': 127, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                }
+            }, 'model_name': 'gpt-4o-2024-08-06', 'system_fingerprint': 'fp_a288987b44', 'id': 'chatcmpl-Bj2dtxEKZldDz5VmVEQ5gmYBZD77M', 'service_tier': 'default', 'finish_reason': 'tool_calls', 'logprobs': None
+        }, id='run--ef2843ac-4743-41d5-9c75-986dcbc75216-0', tool_calls=[
+            {'name': 'add', 'args': {'a': 3, 'b': 5
+                }, 'id': 'call_rnPvcHcifXPtfN3bV9LyFObF', 'type': 'tool_call'
+            },
+            {'name': 'multiply', 'args': {'a': 8, 'b': 12
+                }, 'id': 'call_N6m2zMV6sszfLKFObRC1Vl1N', 'type': 'tool_call'
+            }
+        ], usage_metadata={'input_tokens': 77, 'output_tokens': 50, 'total_tokens': 127, 'input_token_details': {'audio': 0, 'cache_read': 0
+            }, 'output_token_details': {'audio': 0, 'reasoning': 0
+            }
+        }), ToolMessage(content='8', name='add', id='1c99f846-0f49-420d-8ac4-b3e4a6fd2292', tool_call_id='call_rnPvcHcifXPtfN3bV9LyFObF'), ToolMessage(content='96', name='multiply', id='be702d6f-d8dd-4b76-995b-827ba6fb42ca', tool_call_id='call_N6m2zMV6sszfLKFObRC1Vl1N'), AIMessage(content='The result of \\((3 + 5) \\times 12\\) is 96.', additional_kwargs={'refusal': None
+        }, response_metadata={'token_usage': {'completion_tokens': 21, 'prompt_tokens': 143, 'total_tokens': 164, 'completion_tokens_details': {'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0
+                }, 'prompt_tokens_details': {'audio_tokens': 0, 'cached_tokens': 0
+                }
+            }, 'model_name': 'gpt-4o-2024-08-06', 'system_fingerprint': 'fp_a288987b44', 'id': 'chatcmpl-Bj2dvbUEXXmgnf0XTgB7bSIxjbage', 'service_tier': 'default', 'finish_reason': 'stop', 'logprobs': None
+        }, id='run--f133300b-7ec5-421a-acca-194e6d81b368-0', usage_metadata={'input_tokens': 143, 'output_tokens': 21, 'total_tokens': 164, 'input_token_details': {'audio': 0, 'cache_read': 0
+            }, 'output_token_details': {'audio': 0, 'reasoning': 0
+            }
+        })
+    ]
+}

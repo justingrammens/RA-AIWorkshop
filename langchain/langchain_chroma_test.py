@@ -7,6 +7,8 @@ from langchain.chains.summarize import load_summarize_chain
 from langchain.document_loaders import PyPDFLoader
 
 from langchain.chains import RetrievalQA
+from dotenv import load_dotenv
+import os
 
 # Streamlit app
 st.subheader('Ask Questions of Your Documents!')
@@ -14,6 +16,12 @@ st.subheader('Ask Questions of Your Documents!')
 source_doc = st.file_uploader("Source Document", label_visibility="collapsed", type="pdf")
 
 query = st.text_input("Enter your query")
+
+# By default, load_dotenv() won't override existing env vars
+# Use override=True to force override
+load_dotenv(override=True)
+api_key = os.getenv('OPENAI_API_KEY')
+print(f"OpenAI API Key: {api_key}")  # For debugging purposes, remove in production
 
 # If the 'Summarize' button is clicked
 if st.button("Ask Question"):

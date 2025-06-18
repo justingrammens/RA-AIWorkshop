@@ -6,6 +6,9 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.chains import ConversationalRetrievalChain
 import logging
+from dotenv import load_dotenv
+import os
+# 
 
 def clear_history():
     if 'history' in st.session_state:
@@ -22,6 +25,12 @@ def main():
     # User input fields
     youtube_url = st.text_input("Enter YouTube URL")
     question = st.text_input("Enter Your Question")
+
+    # By default, load_dotenv() won't override existing env vars
+    # Use override=True to force override
+    load_dotenv(override=True)
+    api_key = os.getenv('OPENAI_API_KEY')
+    print(f"OpenAI API Key: {api_key}")  # For debugging purposes, remove in production
     
     if st.button("Get Transcript"):
 

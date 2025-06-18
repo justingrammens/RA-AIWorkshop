@@ -8,6 +8,15 @@ Finally, we'll show how you can easily bring your AI applications to life throug
 
 If you would like to run a basic exmaple, test running a Python Notebook in Google Collab for [LangChain Medical Device](https://colab.research.google.com/drive/1xNyQPdNaPW5UEw0I16H1ciGaDpXMFgql?usp=sharing).
 
+## Create Virtual Environment
+
+If you haven't already you can create a virtual environment with the commands.
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+
 ## ABOUT ME
 
 Hi! I’m [Justin Grammens](https://justingrammens.com). I’m a lifelong learner, passionate about Software Development, Artificial Intelligence, and driven by giving back to the community through service and education. 
