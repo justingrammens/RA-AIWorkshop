@@ -16,6 +16,9 @@ python3 -m venv .venv
 
 source .venv/bin/activate
 
+Create a file named .env with the contents of your OPENAI_API_KEY
+
+OPENAI_API_KEY=
 
 ## ABOUT ME
 
